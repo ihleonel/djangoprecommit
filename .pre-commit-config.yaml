@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+    hooks:
+    - id: black
+      name: black
+      entry: black --check djangoprecommit/
+      language: system
+      files: ^djangoprecommit/
+    - id: flake8
+      name: flake8
+      entry: flake8
+      language: system
+      files: ^djangoprecommit/
