@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h1>Create Blog</h1>
+<form method="POST">{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" value="Agregar">
+	<a href="{% url 'list-blog' %}">Volver</a>
+</form>
+{% endblock %}

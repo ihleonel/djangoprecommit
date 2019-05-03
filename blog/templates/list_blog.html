@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h1>List Blog</h1>
+<a href="{% url 'create-blog'%}">Agregar</a>
+<hr>
+<ul>
+	{% for blog in blogs %}
+		<li>{{blog.titulo}}</li>
+	{% endfor %}
+</ul>
+{% endblock %}
