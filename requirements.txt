@@ -16,7 +16,7 @@ pre-commit==1.14.4
 pycodestyle==2.5.0
 pyflakes==2.1.1
 pytz==2018.9
-PyYAML==5.1
+PyYAML==5.4
 six==1.12.0
 toml==0.10.0
 virtualenv==16.4.3
